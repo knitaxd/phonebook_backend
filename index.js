@@ -6,7 +6,7 @@ const cors = require('cors')
 morgan.token('body', (req) => JSON.stringify(req.body))
 
 // Middlewares
-app.use(express.static('build'))
+app.use(express.static('dist'))
 app.use(express.json())
 app.use(cors())
 app.use(morgan('tiny'))
